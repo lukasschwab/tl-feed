@@ -1,3 +1,6 @@
 service: tl-feed
 runtime: go112
-
+# Setting the maximum to 1 instance usually keeps your instance hour usage
+# within the free tier.
+automatic_scaling:
+  max_instances: 1
